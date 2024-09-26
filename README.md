@@ -8,3 +8,7 @@ Welcome to Web Development!
  - staging  / prepare for sync
  - commit   / upload snapshot
  - push     / sync changes
+
+ - alt + arrow up/down
+
+ - 
