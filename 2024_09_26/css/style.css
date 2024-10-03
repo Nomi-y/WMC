@@ -1,0 +1,12 @@
+.centered {
+    text-align: center;
+}
+
+#linkaboutme {
+    text-align: center;
+    font-weight: bold;
+}
+
+#linkaboutme:hover {
+    color: green;
+}

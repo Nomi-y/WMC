@@ -9,3 +9,9 @@ Welcome to Web Development!
  - commit   / upload snapshot
  - push     / sync changes
  - alt + arrow up/down to shift lines
+
+ ## 2024-10-03
+ To do:
+
+ - Make an aboutme.html
+ - style with css
