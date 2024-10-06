@@ -1,12 +1,69 @@
-.centered {
-    text-align: center;
+/* Color Pallete:
+    #6b416e
+    #BB9AB1
+    #EECEB9
+    #FEFBD8
+*/
+body {
+    background-color: #FEFBD8;
 }
 
-#linkaboutme {
+.sidenav {
+    width: 170px;
+    height: 100%;
+    position: fixed;
+    margin-top: 30px;
+    margin-left: 7px;
+    padding: 15px;
+    background-color: #EECEB9;
+}
+
+.sidenav a {
+    padding: 10px 8px 6px 16px;
+    font-size: 20px;
+    display: block;
+    color: black;
+    background-color: #EECEB9;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sidenav a:hover {
+    background-color: #BB9AB1;
+}
+
+main {
+    margin: 250px;
+    margin-top: 50px;
+    margin-right: 500px;
+}
+
+main h1 {
     text-align: center;
     font-weight: bold;
+    letter-spacing: 2px;
+    color: #462848;
 }
 
-#linkaboutme:hover {
-    color: green;
+main p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #EECEB9;
+    color: #462848;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    overflow-wrap: anywhere;
+}
+
+main ul {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #EECEB9;
+    color: #462848;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    list-style: none;
 }
