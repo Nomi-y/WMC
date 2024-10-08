@@ -36,7 +36,7 @@ body {
 main {
     margin: 250px;
     margin-top: 50px;
-    margin-right: 500px;
+    margin-right: 20%;
 }
 
 main h1 {
@@ -55,6 +55,14 @@ main p {
     padding-top: 7px;
     padding-bottom: 7px;
     overflow-wrap: anywhere;
+}
+
+@media (max-width: 800px) {
+    main {
+        margin: 250px;
+        margin-top: 50px;
+        margin-right: 5%;
+    }
 }
 
 main ul {
