@@ -75,3 +75,7 @@ main ul {
     padding-bottom: 7px;
     list-style: none;
 }
+
+main li {
+    padding-bottom: 5px;
+}
