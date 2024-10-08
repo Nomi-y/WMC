@@ -33,6 +33,21 @@ body {
     background-color: #BB9AB1;
 }
 
+@media (max-width: 800px) {
+    .sidenav {
+        width: 120px;
+        padding: 7px;
+    }
+
+    .sidenav a {
+        font-size: 15px;
+    }
+
+    .sidenav img {
+        width: 10px;
+    }
+}
+
 main {
     margin: 250px;
     margin-top: 50px;
@@ -59,7 +74,7 @@ main p {
 
 @media (max-width: 800px) {
     main {
-        margin: 250px;
+        margin: 180px;
         margin-top: 50px;
         margin-right: 5%;
     }
