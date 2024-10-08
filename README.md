@@ -1,6 +1,8 @@
-# WMC Materials 3AAIF WS_2425
+ ## 2024-10-03
+ To do:
 
-Welcome to Web Development!
+ - Make an aboutme.html
+ - style with css
 
 ## 2024-09-19
  3 Steps to sync
@@ -10,8 +12,6 @@ Welcome to Web Development!
  - push     / sync changes
  - alt + arrow up/down to shift lines
 
- ## 2024-10-03
- To do:
+ # WMC Materials 3AAIF WS_2425
 
- - Make an aboutme.html
- - style with css
+Welcome to Web Development!
