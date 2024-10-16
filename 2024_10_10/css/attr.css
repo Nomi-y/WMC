@@ -1,0 +1,41 @@
+/* Select all links in main leading to an external page and turn them yellow */
+main a[target="_blank"] {
+    text-decoration: none;
+    color: yellow;
+}
+
+/* External links in main a colored blue on hover */
+main a:hover[target="_blank"] {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Select all internal links (all a without target) in main and format them with red color, bold and font "Times New Roman" */
+main a:not([target]) {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* First anchor element in the .sidenav underlined */
+.sidenav a:first-child {
+    text-decoration: underline;
+}
+
+/* Every second header in main is 10px big */
+main h1:nth-of-type(2n) {
+    font-size: 10px;
+}
+
+/* Every second paragraph in main is colored green and bold */
+main p:nth-of-type(2n) {
+    color: green;
+    font-weight: bold;
+}
+
+/* Every .png image has a fixed width of 50px and a background color yellowgreen */
+main img[src$=".png"] {
+    width: 50px;
+    background-color: yellowgreen;
+}
