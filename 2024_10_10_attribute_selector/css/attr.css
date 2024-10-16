@@ -34,8 +34,17 @@ main p:nth-of-type(2n) {
     font-weight: bold;
 }
 
-/* Every .png image has a fixed width of 50px and a background color yellowgreen */
+/* Every image.png in main has a fixed width of 50px and is centered in its parent element */
 main img[src$=".png"] {
     width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Every non-png image in main has a yellowgreen background and a width of 75px */
+main img:not([src$=".png"]) {
     background-color: yellowgreen;
+    width: 75px;
+    padding: 10px;
 }
