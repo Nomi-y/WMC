@@ -1,3 +1,8 @@
+ ## 2024-10-17
+ To do:
+
+ - Play css diner on https://flukeout.github.io/
+
  ## 2024-10-10
  To do:
 
