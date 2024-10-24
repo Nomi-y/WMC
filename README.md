@@ -1,3 +1,7 @@
+ ## 2024-10-24
+ To do:
+ - Play flex box froggy on https://flexboxfroggy.com/
+
  ## 2024-10-17
  To do:
 
