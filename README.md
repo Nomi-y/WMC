@@ -1,3 +1,8 @@
+  # WMC Materials 3AAIF WS_2425
+
+Welcome to Web Development!
+Welcome to Web Development!
+ 
  ## 2024-10-24
  To do:
  - Play flex box froggy on https://flexboxfroggy.com/
@@ -27,7 +32,3 @@
  - alt + arrow up/down to shift lines
 
  - https://www.w3schools.com
-
- # WMC Materials 3AAIF WS_2425
-
-Welcome to Web Development!
