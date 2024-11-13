@@ -1,14 +1,24 @@
-/* Color Pallete:
-    #6b416e
-    #BB9AB1
-    #EECEB9
-    #FEFBD8
-*/
-body {
-    background-color: #FEFBD8;
+/* Color Pallete: */
+:root {
+    --txt-color-primary: #A64D79;
+    --txt-color-secondary: #6A1E55;
+    --txt-color-tertiary: #FFFFFF;
+    --bg-color-primary: #1A1A1D;
+    --bg-color-secondary: #3b1c32;
 }
 
-.sidenav {
+
+
+body {
+    background: var(--bg-color-primary);
+}
+
+.custom-content {
+    margin-top: 5rem;
+    margin-bottom: 2rem
+}
+
+/*.sidenav {
     width: 170px;
     height: 100%;
     position: fixed;
@@ -93,4 +103,4 @@ main ul {
 
 main li {
     padding-bottom: 5px;
-}
+} */
