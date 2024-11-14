@@ -1,6 +1,11 @@
   # WMC Materials 3AAIF WS_2425
 
 Welcome to Web Development!
+
+ ## 2024-11-14
+ To do:
+  - Complete the exercise 
+
  ## 2024-11-07
 To do:
  - Restyle with Bootstrap, remove CSS styling
