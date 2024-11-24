@@ -47,6 +47,7 @@
     font-weight: 900 !important;
 }
 
+/* Prevent to logo from getting bigger than set size */
 #logo {
     max-width: 150px;
 }
@@ -64,7 +65,7 @@ ul.check-bullets li {
 }
 
 /* Stack cards vertically on small displays */
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     .sign-up-cards {
         flex-direction: column;
         align-items: center;
