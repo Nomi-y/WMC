@@ -1,16 +1,72 @@
 :root {
+    /* Define color palette in HEX and RGB */
     --color-primary: #00ad6a;
     --color-secondary: #eafaf1;
     --color-accent: #1fe374;
     --color-dark: #080c16;
     --color-light: #d6dae5;
     --color-background: #fcfcfc;
+    --color-grey: #4d4d4d;
 
+    --color-primary-rgb: 0, 173, 106;
+    --color-secondary-rgb: 234, 250, 241;
+    --color-accent-rgb: 31, 227, 116;
+    --color-dark-rgb: 8, 12, 22;
+    --color-light-rgb: 214, 218, 229;
+    --color-background-rgb: 252, 252, 252;
+    --color-grey-rgb: 77, 77, 77;
+
+    /* Override bootstrap defaults */
+
+    --bs-primary: var(--color-primary);
+    --bs-primary-rgb: var(--color-primary-rgb);
+
+    --bs-secondary: var(--color-secondary);
+    --bs-secondary-rgb: var(--color-secondary-rgb);
+
+    --bs-accent: var(--color-accent);
+    --bs-accent-rgb: var(--color-accent-rgb);
+
+    --bs-dark: var(--color-dark);
+    --bs-dark-rgb: var(--color-dark-rgb);
+
+    --bs-light: var(--color-grey);
+    --bs-light-rgb: var(--color-grey-rgb);
 
     --bs-body-bg: var(--color-secondary);
 }
 
-/* body {
-    color: var(--color-dark);
-    background: var(--color-background);
-} */
+/* Override primary button color */
+.btn-primary {
+    background-color: var(--bs-accent) !important;
+    border-color: var(--bs-accent) !important;
+}
+
+/* Very thick boldness for fw-bolder */
+.fw-bolder {
+    font-weight: 900 !important;
+}
+
+#logo {
+    max-width: 150px;
+}
+
+/* Use flex container to display list icons and list-item text */
+ul.check-bullets li i {
+    color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+ul.check-bullets li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+/* Stack cards vertically on small displays */
+@media (max-width: 1000px) {
+    .sign-up-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
