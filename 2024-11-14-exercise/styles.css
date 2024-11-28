@@ -63,11 +63,3 @@ ul.check-bullets li {
     align-items: flex-start;
     gap: 8px;
 }
-
-/* Stack cards vertically on small displays */
-@media (max-width: 900px) {
-    .sign-up-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-}
