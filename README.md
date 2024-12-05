@@ -2,6 +2,15 @@
 
 Welcome to Web Development!
 
+ ## 2024-11-05
+  - Pulse Exercise
+
+ ## 2024-11-29
+  - Pulse Exercise
+
+ ## 2024-11-21
+  - Pulse Exercise
+
  ## 2024-11-14
  To do:
   - Complete the exercise 
