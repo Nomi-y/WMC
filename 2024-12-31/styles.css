@@ -1,0 +1,263 @@
+body {
+    background-color: #181a21;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background: #171d25;
+    height: 104px;
+    font-weight: 500;
+    font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
+}
+
+nav>ul:first-of-type .nav-item {
+    margin-left: -20px;
+}
+
+nav>ul:last-of-type .nav-item {
+    margin-top: 4px;
+    font-size: x-small;
+}
+
+.nav-item .active {
+    color: #1a9fff;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 3px;
+
+}
+
+.nav-item :not(.active) {
+    color: #dcdedf;
+}
+
+#install-steam {
+    margin-left: 10px;
+    margin-right: 7px;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #5c7e10;
+    color: #8a8a8b;
+}
+
+li#install-steam~li a {
+    color: #8a8a8b;
+}
+
+#bg-image {
+    display: block;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#main-login {
+    position: absolute;
+    border-radius: 0;
+}
+
+.sign-in-header {
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.password-header {
+    color: #7b7b7b;
+}
+
+.account-header {
+    color: #1a9fff;
+}
+
+#qr {
+    padding-right: 25px;
+}
+
+.login-form {
+    background-color: #181a21;
+}
+
+.card {
+    background-color: #181a21;
+    border-style: none;
+}
+
+.form-control {
+    padding: 10px;
+    background-color: #32353c;
+    border-radius: 0;
+    border-style: none;
+}
+
+.form-check-input {
+    background-color: #32353c;
+    border-radius: 0;
+    border-style: none;
+}
+
+.remember-me {
+    color: #7b7b7b;
+    ;
+}
+
+#sign-in-button {
+    padding-left: 90px;
+    padding-right: 90px;
+    align-self: center;
+    border-radius: 0;
+    border-style: none;
+}
+
+#sign-in-button-text {
+    font-weight: 500;
+    font-size: smaller;
+}
+
+form>button {
+    align-items: center;
+}
+
+label span {
+    font-size: small;
+    font-weight: 600;
+}
+
+
+#sign-in-help {
+    padding-top: 20px;
+    text-align: center;
+    font-size: smaller;
+    text-decoration: underline;
+    color: #919191;
+}
+
+#img-qr {
+    border-radius: 10px;
+    background-color: #fff;
+    height: auto;
+    width: 225px;
+}
+
+#bottom-text {
+    color: #919191;
+    text-align: center;
+    font-size: smaller;
+    margin-top: 0.5rem;
+}
+
+#bottom-text a {
+    color: #919191;
+    text-decoration: underline;
+}
+
+#main-login {
+    margin-top: 60px;
+}
+
+#main-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-title {
+    margin-bottom: -3px;
+}
+
+#footer {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    align-items: center;
+    margin-top: -450px;
+    color: red;
+    width: 100%;
+}
+
+#new-to-steam {
+
+    background-color: #181a21;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+
+#new-to-steam h5 {
+    color: #fff;
+    font-weight: 900;
+}
+
+#create-account-button {
+    z-index: 10;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    align-self: center;
+    border-radius: 0;
+    border-style: none;
+}
+
+#create-account-button-text {
+    font-size: small;
+    font-weight: 500;
+}
+
+#ran-out-of-names {
+    color: #a8a8a8;
+}
+
+#ran-out-of-names a {
+    color: #a8a8a8;
+    text-decoration: underline;
+}
+
+.flex-grow-1 {
+    max-width: 500px
+}
+
+#about {
+    background-color: #181a21;
+}
+
+#about img {
+    height: 30px;
+    width: auto;
+}
+
+#about p {
+    color: #89929a;
+    font-size: x-small;
+}
+
+#about a {
+    color: #c0c0c0;
+}
+
+#aboutp2 {
+    margin-top: -15px;
+}
+
+p#linkfarm {
+    margin-top: 10px;
+    padding-bottom: 130px;
+    font-size: small;
+}
+
+#linkfarm a {
+    padding: 15px;
+    color: #c0c0c0;
+}
+
+#linkfarm img {
+    height: 15px;
+    width: auto;
+}

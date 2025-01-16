@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sign In</title>
+</head>
+
+<body class="d-flex flex-column">
+  <nav class="d-flex justify-content-center">
+    <ul class="nav list-unstyled nv-underline align-items-center">
+      <li class="nav-item">
+        <div class="container-fluid"></div>
+        <a class="nav-link" href="#">
+          <img src="img/steamlogo.png" alt="Logo" width="176" height="44" class="d-inline-block align-text-top">
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">STORE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-decoration-none" href="#">COMMUNITY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-decoration-none" href="#">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-decoration-none" href="#">SUPPORT</a>
+      </li>
+    </ul>
+    <ul class="nav list-unstyled align-items-start justify-content-end mx-5 px-1">
+      <li id="install-steam" class="nav-item">
+        <a href="#">Install Steam</a>
+      </li>
+      <li class="nav-item px-1">
+        <a href="#">login</a>
+      </li>
+      <li class="nav-item px-1">
+        <a href="https://youtu.be/dQw4w9WgXcQ">|</a>
+      </li>
+      <li class="nav-item px-1">
+        <a href="#">language<img src="img/btn_arrow_down_padded.png" alt=""></a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div id="main-container" class="d-flex justify-content-center flex-row">
+      <div id="img-container">
+        <img id="bg-image" src="img/catalogue.jpg" alt="catalogue">
+      </div>
+      <div id="main-login" class="flex-item">
+        <h3 class="sign-in-header">Sign In</h3>
+        <div class="row px-3 py-3 login-form">
+          <div class="col-8 card" style="width: 25rem;">
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label class="form-label">
+                    <span class="card-title account-header">SIGN IN WITH ACCOUNT NAME</span>
+                  </label>
+                  <input class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">
+                    <span class="card-title password-header">PASSWORD</span>
+                  </label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input">
+                  <label class="form-check-label remember-me">Remember me</label>
+                </div>
+                <div class="d-flex flex-column justify-content-center">
+                  <button id="sign-in-button" class="btn btn-primary">
+                    <span id="sign-in-button-text">Sign
+                      In</span>
+                  </button>
+                  <a href="#" id="sign-in-help">Help, I can't sign in</a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div id="qr" class="col">
+            <h6 class="account-header my-3">OR SIGN IN WITH QR</h6>
+            <img id="img-qr" src="img/qr-code.png" class="form-control" alt="qr code">
+            <p id="bottom-text">Use the <a href="#">Steam Mobile App</a> to sign<br>in via QR code</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <section id="new-to-steam" class="">
+        <div class="d-flex justify-content-center gx-1">
+          <div class="flex-item flex-grow-1">
+            <h5>New to Steam?</h5>
+            <button id="create-account-button" class="btn btn-primary">
+              <span id="create-account-button-text">Create an Account</span>
+            </button>
+          </div>
+          <div id="spacer" class="flex-item"></div>
+          <div class="flex-item flex-grow-1">
+            <p id="ran-out-of-names">It's free and easy. Discover thousands of<br>games to play with millions of new
+              friends.<br><a href="#">Learn
+                more about Steam</a></p>
+          </div>
+        </div>
+      </section>
+      <div id="about">
+        <div class="d-flex justify-content-center mx-2">
+          <div class="flex-item"><img src="img/footerLogo_valve_new.png" alt=""></div>
+          <div class="flex-item mx-2 px-2">
+            <p>© 2025 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in
+              the US and other countries</p>
+            <p id="aboutp2">VAT included in all prices where applicable. <a href="#">Privacy Policy</a> | <a
+                href="#">Legal</a> | <a href="#">Steam Subscriber Agreement</a> | <a href="#">Refunds</a> | <a
+                href="#">Cookies</a>
+            </p>
+          </div>
+          <div class="flex-item"><img src="img/logo_steam_footer.png" alt=""></div>
+        </div>
+        <p id="linkfarm">
+          <a href="#">About Valve</a>
+          |
+          <a href="#">Jobs</a>
+          |
+          <a href="#">Steamworks</a>
+          |
+          <a href="#">Steam Distribution</a>
+          |
+          <a href="#">Support</a>
+          |
+          <a href="#">Gift Cards</a>
+          |
+          <a href="#"><img src="img/ico_facebook.png" alt="Facebook"> Steam</a>
+          |
+          <a href="#"><img src="img/ico_twitter.png" alt="X"> @steam</a>
+        </p>
+
+      </div>
+    </footer>
+
+
+  </main>
+
+
+</body>
+
+</html>
