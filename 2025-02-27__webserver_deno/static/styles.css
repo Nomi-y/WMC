@@ -1,0 +1,58 @@
+#thebutton {
+    border-color: #810000;
+    color: azure;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0px;
+    border-style: solid;
+}
+
+#thebutton:hover {
+    background-color: #810000;
+}
+
+#numberIn {
+    border-radius: 0px;
+    border-style: solid;
+}
+
+body {
+    padding: 2%;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 69420;
+    opacity: 1;
+}
+
+#overlay-text {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.success {
+    background-color: green;
+}
+
+.failure {
+    background-color: red;
+}
+
+.unknown {
+    background-color: gray;
+}
