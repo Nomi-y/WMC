@@ -1,3 +1,19 @@
+const ROMAN_NUMERALS = [
+  ["M", 1000],
+  ["CM", 900],
+  ["D", 500],
+  ["CD", 400],
+  ["C", 100],
+  ["XC", 90],
+  ["L", 50],
+  ["XL", 40],
+  ["X", 10],
+  ["IX", 9],
+  ["V", 5],
+  ["IV", 4],
+  ["I", 1]
+];
+
 export function to_roman(a) {
   if (Math.floor(a) !== a) throw new Error("Parameter is not in integer!")
   if (a >= 4000 || a < 0) throw new Error("Parameter is not in range! (0 - 3999)")
@@ -22,19 +38,17 @@ function integerDivision(a, b) {
   return { x, a }
 }
 
-const ROMAN_NUMERALS = [
-  ["M", 1000],
-  ["CM", 900],
-  ["D", 500],
-  ["CD", 400],
-  ["C", 100],
-  ["XC", 90],
-  ["L", 50],
-  ["XL", 40],
-  ["X", 10],
-  ["IX", 9],
-  ["V", 5],
-  ["IV", 4],
-  ["I", 1]
-];
+
+// deno run main.js
+if (import.meta.main) {
+  const input = prompt("Enter a number (0-3999):");
+  if (input !== null) {
+    const num = Number(input);
+    try {
+      console.log(`Roman numeral: ${to_roman(num)}`);
+    } catch (error) {
+      console.error("Error:", error.message);
+    }
+  }
+}
 
