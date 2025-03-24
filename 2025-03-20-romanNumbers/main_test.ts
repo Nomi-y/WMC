@@ -1,5 +1,5 @@
 import { assertEquals, assertThrows } from "@std/assert";
-import { to_roman } from "./main.js";
+import { to_roman, from_roman } from "./main.js";
 
 Deno.test("Single digit Roman numerals", () => {
   assertEquals(to_roman(1), "I");
@@ -37,4 +37,40 @@ Deno.test("Edge cases", () => {
   assertEquals(to_roman(0), "0");
   assertThrows(() => to_roman(4000), Error, "Parameter is not in range! (0 - 3999)");
   assertThrows(() => to_roman(-1), Error, "Parameter is not in range! (0 - 3999)");
+});
+
+Deno.test("Single digit Roman numerals", () => {
+  assertEquals(from_roman("I"), 1);
+  assertEquals(from_roman("II"), 2);
+  assertEquals(from_roman("III"), 3);
+  assertEquals(from_roman("IV"), 4);
+  assertEquals(from_roman("V"), 5);
+  assertEquals(from_roman("IX"), 9);
+});
+
+Deno.test("Tens Roman numerals", () => {
+  assertEquals(from_roman("X"), 10);
+  assertEquals(from_roman("XIV"), 14);
+  assertEquals(from_roman("XIX"), 19);
+  assertEquals(from_roman("XX"), 20);
+  assertEquals(from_roman("XL"), 40);
+  assertEquals(from_roman("L"), 50);
+  assertEquals(from_roman("XC"), 90);
+  assertEquals(from_roman("C"), 100);
+});
+
+Deno.test("Hundreds Roman numerals", () => {
+  assertEquals(from_roman("CD"), 400);
+  assertEquals(from_roman("D"), 500);
+  assertEquals(from_roman("CM"), 900);
+  assertEquals(from_roman("M"), 1000);
+});
+
+Deno.test("Large Roman numerals", () => {
+  assertEquals(from_roman("MCMLXXXVII"), 1987);
+  assertEquals(from_roman("MMMCMXCIX"), 3999);
+});
+
+Deno.test("Edge cases", () => {
+  assertEquals(from_roman("0"), 0);
 });

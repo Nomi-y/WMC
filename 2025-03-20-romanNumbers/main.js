@@ -15,7 +15,7 @@ const ROMAN_NUMERALS = [
 ];
 
 export function to_roman(a) {
-  if (Math.floor(a) !== a) throw new Error("Parameter is not in integer!")
+  if (Math.floor(a) !== a) throw new Error("Parameter is not an integer!")
   if (a >= 4000 || a < 0) throw new Error("Parameter is not in range! (0 - 3999)")
   if (a === 0) return "0"
   let romanNumber = ""
@@ -29,6 +29,30 @@ export function to_roman(a) {
   return romanNumber
 }
 
+export function from_roman(str) {
+  if (typeof str !== "string") throw new Error("Parameter is not a valid string!")
+  if (str == "0") return 0
+  let res = 0
+  let i = 0
+  while (i < str.length) {
+    const s1 = value(str.charAt(i))
+    if (i + 1 < str.length) {
+      const s2 = value(str.charAt(i + 1))
+      if (s1 >= s2) {
+        res += s1
+        i++
+      } else {
+        res += s2 - s1
+        i += 2
+      }
+    } else {
+      res += s1
+      i++
+    }
+  }
+  return res
+}
+
 function integerDivision(a, b) {
   let x = 0
   while (a >= b) {
@@ -38,7 +62,12 @@ function integerDivision(a, b) {
   return { x, a }
 }
 
-
+function value(symbol) {
+  for (const [s, value] of ROMAN_NUMERALS) {
+    if (s === symbol) return value
+  }
+  return null
+}
 // deno run main.js
 if (import.meta.main) {
   const input = prompt("Enter a number (0-3999):");
