@@ -31,9 +31,7 @@ export class Album {
     }
 
     getTotalDuration(): number {
-        var duration = 0
-        this.songs.forEach(s => duration += s.duration)
-        return duration
+        return this.songs.reduce((sum, item) => sum + item.duration, 0)
     }
 
     getLongestSong(): Song {
